@@ -1,27 +1,29 @@
 # 🌤️ SkyCast - Your Weather Companion  
 SkyCast is a dynamic weather forecasting app that provides real-time weather updates using [Weather API Name]. Stay informed about temperature, humidity, and weather conditions anywhere in the world!  
+
 ##  Features  
-Real-time weather updates 🌍  
-Search by city or location 🔍  
-Displays temperature, humidity, and wind speed 🌡️  
+ Real-time weather updates 🌍  
+ Search by city or location 🔍  
+ Displays temperature, humidity, and wind speed 🌡️  
 
-## 
-![SkyCast Home](‪C:\Users\Admin\Pictures\skycast.png)  
-![SkyCast Place](‪C:\Users\Admin\Pictures\skycast_place.png)  
+##  Screenshots  
+ <img width="960" alt="skycast" src="https://github.com/user-attachments/assets/1b6dd52c-b879-4aca-99ba-f56f04c9b27d" />
+ 
+ <img width="960" alt="skycast_place" src="https://github.com/user-attachments/assets/4904a9a1-69f9-4dc3-9b19-c85a92e82fbb" />
 
-## Installation & Setup  
-1) Clone the repository:  
-```sh
+
+#### Clone the repository
 git clone https://github.com/your-username/SkyCast.git
+
 cd SkyCast
 
-2) Install dependencies : npm install
-3) Start the app locally: npm start
-4) Opens the Server
-5) API Setup
-  Get your free API key from [Weather API Provider](https://weatherapi.com)  
-  Create a `.env` file in the root directory:  
-```sh
-REACT_APP_API_KEY=your_api_key_here
-6)Restart the Server
+#### Install dependencies
+npm install
 
+#### Create .env file for API Key (Modify API_KEY_HERE)
+echo REACT_APP_API_KEY=your_api_key_here > .env
+
+#### Start the React app
+npm start
+
+ 

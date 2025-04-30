@@ -1,0 +1,178 @@
+/* 🌍 General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: url("https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 📦 Weather App Container */
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 🏙️ Search Box */
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Added more gap */
+    margin-bottom: 25px;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* 🌆 City Input Field */
+input {
+    padding: 12px 15px;
+    width: 280px;
+    border: 2px solid rgba(72, 61, 139, 0.8); /* Deep lavender */
+    border-radius: 50px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8); /* Softer background */
+    color: #4B0082; /* Indigo text */
+    font-size: 18px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+}
+
+input::placeholder {
+    color: #444;
+}
+
+/* 🏙️ Input Field Hover */
+input:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(72, 61, 139, 1);
+}
+
+/* 🔥 Weather App Heading */
+h2 {
+    color: rgb(80, 86, 205); /* Soft Peach */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* 🔍 Search Button */
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #FF6347, #FF4500);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔍 Search Button Hover */
+button:hover {
+    background: linear-gradient(135deg, #FF4500, #FF6347);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌤️ Weather Card */
+.weather-card {
+    width: 370px; /* Slightly wider */
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    color: #4B0082; /* Indigo */
+    transition: 0.3s ease-in-out;
+    animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* 🌞 Weather Icon */
+.weather-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
+}
+
+/* 🌡️ Temperature Display */
+.temperature {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #4B0082; /* Indigo */
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 📌 Weather Description */
+.weather-description {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #4B0082; /* Indigo */
+    margin-bottom: 15px;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 📌 Additional Weather Details */
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.weather-details div {
+    font-size: 16px;
+    color: #4B0082; /* Indigo */
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 📌 Error & Loading Styles */
+.error {
+    color: #ff4444;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.loading {
+    color: #FFDAB9; /* Soft Peach */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* 📌 Footer */
+.footer {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: 14px;
+    opacity: 0.8;
+    animation: fadeIn 2s ease-in-out;
+}
